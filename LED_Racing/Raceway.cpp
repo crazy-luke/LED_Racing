@@ -11,6 +11,11 @@ Raceway::Raceway(byte ledNum) {
   }
 }
 
+Raceway::~Raceway(){
+  delete[] _rampArray;
+  delete[] _muddyArray;
+}
+
 void Raceway::setRamp(byte height,byte startPos,byte peakPos,byte endPos)
 {
   int len = peakPos-startPos;

@@ -12,6 +12,7 @@ class Raceway {
   
   public:
     Raceway(byte ledNum);
+    ~Raceway();
     //陡坡
     void setRamp(byte height,byte startPos,byte peakPos,byte endPos);
     int getRampDist(float dist);
